@@ -1,0 +1,2792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta property="og:type" content="website" />
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="youtube to mp3, youtube to video, youtube to mp4" />
+<meta name="language" content="en" />
+<meta name="description" content="YouTube Video Downloader" />
+<link rel="stylesheet" href="style.css">
+<meta name="google" content="notranslate" />
+<title>YouTube Video Downloader</title>
+<script>
+    function onSubmit(token) {
+        d(token);
+    }
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BFW0DQV25S"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-BFW0DQV25S');
+    </script>
+
+</head>
+<body>
+<header class="header">
+<div class="wrapper">
+<span class="text-light-accent-500 font-bold sm:text-[32px] md:text-[32px] lg:text-[42px]">Youtube Video Downloader<span class="text-light-black-600 dark:text-light-secondary-500">.com</span>
+</span>
+</a>
+<ul class="main-nav">
+<li><a href="https://www.facebook.com/profile.php?id=100093536627463" target="_blank">Facebook</a></li>
+<li><a href="https://github.com/A7md-019" target="_blank">Github</a></li>
+<li><a href="https://www.linkedin.com/in/ahmed-abdelrahman-127b12296/" target="_blank">LinkedIn</a></li>
+</ul>
+</ul>
+</div>
+</header>
+<div class="mobile-menu">
+<div class="relative wrapper">
+<div class="menu-close">
+<a href="#" class="mobile-toggle" aria-label="close the menu">
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="2" y="26" width="36" height="2" rx="1" transform="rotate(-45 2 26)" fill="currentColor" />
+<rect x="3" y="1" width="36" height="2" rx="1" transform="rotate(45 3 1)" fill="currentColor" />
+</svg>
+</a>
+</div>
+<div class="container">
+
+<div class="divider"></div>
+</div>
+</div>
+</div>
+<section class="section section-hero px-5 lg:px-0">
+<div class="container">
+<div class="mx-auto max-w-[677px] pt-[95px] lg:pt-[148px] pb-[51px] lg:pb-[63px]">
+<h1 class="font-extrabold text-[51px] lg:text-[63px] leading-none text-center">
+<span class="text-light-black-600 dark:text-light-secondary-500">YouTube Video Downloader</span><br/>
+</h1>
+<h2 class="font-light text-xs lg:text-base text-light-black-500 dark:text-gray-500 mt-5 text-center">
+Download online for free now!</h2>
+</div>
+</div>
+</section>
+<section class="section section-download">
+<div class="container">
+<div class="download-box">
+<div class="wrapper">
+<input type="text" class="input-url link" autofocus placeholder="Paste Your URL...">
+<div class="button-group">
+<div class="btn-quality" data-value="720">
+<span>MP4 (720p)</span>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="6" fill="white" />
+<path d="M8 11L12 15L16 11" stroke="#2D3436" stroke-linecap="round" />
+</svg>
+</div>
+<button id="load" type="button" class="btn-download">
+<svg width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 21.0002H16C18.8284 21.0002 20.2426 21.0002 21.1213 20.1215C22 19.2429 22 17.8286 22 15.0002V14.0002C22 11.1718 22 9.7576 21.1213 8.8789C20.3529 8.11051 19.175 8.01406 17 8.00195M7 8.00195C4.82497 8.01406 3.64706 8.11051 2.87868 8.87889C2 9.7576 2 11.1718 2 14.0002V15.0002C2 17.8286 2 19.2429 2.87868 20.1215C3.17848 20.4213 3.54062 20.6188 4 20.749" stroke="white" stroke-width="2" stroke-linecap="round" />
+<path d="M12 1V14M12 14L9 10.5M12 14L15 10.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+<span>Download</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section section-result-list">
+</section>
+
+<section class="section section-info">
+<div class="container">
+</div>
+</section>
+<section class="section section-features">
+<div class="container">
+</div>
+</section>
+<div class="dropdown-group popover-quality hidden mt-[9px]">
+<div class="dropdown-wrapper">
+<div class="quality-audio">
+<div class="quality-title">Audio</div>
+<div class="audio-list quality-list">
+<li data-value="mp3">MP3</li>
+<li data-value="m4a">M4A</li>
+<li data-value="webm">WEBM</li>
+<li data-value="aac">AAC</li>
+<li data-value="flac">FLAC</li>
+<li data-value="opus">OPUS</li>
+<li data-value="ogg">OGG</li>
+<li data-value="wav">WAV</li>
+</div>
+</div>
+<div class="quality-video">
+<div class="quality-title">Video</div>
+<div class="video-list quality-list">
+<li data-value="360">MP4 (360p)</li>
+<li data-value="480">MP4 (480p)</li>
+<li data-value="720">MP4 (720p)</li>
+<li data-value="1080">MP4 (1080p)</li>
+<li data-value="1440">MP4 (1440p)</li>
+<li data-value="4k">WEBM (4K)</li>
+</div>
+</div>
+</div>
+</div>
+<footer class="footer">
+<div class="container">
+
+<div class="footer-bottom">
+<div class="w-full flex flex-row items-center justify-between py-[27px]">
+<div class="font-light text-[15px] text-light-black-500 dark:text-light-gray-500 w-full lg:w-[inherit] text-center lg:text-left">
+Copyright © 2024 All Rights
+Reseved.</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    const is_youtube_allowed = true;
+</script>
+<script>
+const contactForm = document.querySelector(".contact-form");
+
+const html = document.querySelector("html");
+
+var repeat_download = false;
+var visited_convertr = false;
+let oldPopper = null;
+
+const btnQuality = document.querySelector(".btn-quality");
+
+const qualityList = document.querySelector(".dropdown-group");
+const qualityItems = document.querySelectorAll(
+".video-list li, .audio-list li"
+);
+
+const themeSwitcher = document.querySelector("#theme-switcher");
+const themeSwitcherMobile = document.querySelector("#theme-switcher-mobile");
+
+const menuControl = document.querySelector(".menu-control");
+const mobileToggle = document.querySelector(".mobile-toggle");
+
+const inputLink = document.querySelector(".input-url");
+const btnDownload = document.querySelector(".btn-download");
+const mainBtnQuality = document.querySelector(".btn-quality");
+const videoQualities = {
+360: "MP4 (360p)",
+480: "MP4 (480p)",
+720: "MP4 (720p)",
+1080: "MP4 (1080p)",
+1440: "MP4 (1440p)",
+"4k": "WEBM (4K)",
+"8k": "WEBM (8K)",
+};
+const audioQualities = [
+"mp3",
+"m4a",
+"webm",
+"aac",
+"flac",
+"opus",
+"ogg",
+"wav",
+];
+
+const alertSuccess = `
+<div class="flex items-center p-4 mb-4 text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
+<svg class="flex-shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+<path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+</svg>
+<span class="sr-only">Info</span>
+<div class="ms-3 text-sm font-medium alert-msg"></div>
+<button type="button" onclick="removeAlert()" class="ms-auto -mx-1.5 -my-1.5 bg-green-50 text-green-500 rounded-lg focus:ring-2 focus:ring-green-400 p-1.5 hover:bg-green-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-green-400 dark:hover:bg-gray-700" data-dismiss-target="#alert-3" aria-label="Close">
+<span class="sr-only">Close</span>
+<svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+</svg>
+</button>
+</div>
+`;
+
+const alertError = `
+<div class="flex items-center p-4 mb-4 text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+<svg class="flex-shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+<path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+</svg>
+<span class="sr-only">Info</span>
+<div class="ms-3 text-sm font-medium alert-msg"></div>
+<button type="button" onclick="removeAlert()" class="ms-auto -mx-1.5 -my-1.5 bg-red-50 text-red-500 rounded-lg focus:ring-2 focus:ring-red-400 p-1.5 hover:bg-red-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-red-400 dark:hover:bg-gray-700" data-dismiss-target="#alert-2" aria-label="Close">
+<span class="sr-only">Close</span>
+<svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+</svg>
+</button>
+</div>
+`;
+
+var singleResultTemplate = `
+<div class="container">
+<div class="result-container">
+<div class="result-content">
+<div class="video-thumb">
+<img src="https://i.ytimg.com/vi/SUogHvm4lNw/hqdefault.jpg" alt="">
+</div>
+<div class="video-details">
+<div class="tag-list">
+  <a href="">Video</a>
+  <a href="">MP4 1080 p</a>
+</div>
+<div class="flex flex-col gap-2 lg:gap-0">
+  <div class="video-title">Paris Evening Walk and Bike Ride - 4K - With Captions!</div>
+<p class="video-url"><span>URL:</span> https://www.youtube.com/watch?v=1_XzrxXnwMM</p>
+</div>
+<a href="" class="btn-download" onclick="openit()">
+  <div class="progress animate-pulse"></div>
+  <span>Download in Progress ... 0%</span>
+</a>
+<p class="error-msg"></p>
+</div>
+</div>
+<div class="max-w-[496px] mx-auto font-medium text-[15px] lg:text-[21px] text-center text-light-black-600 pt-10">
+Thanks for downloading your video. You can now convert your video for free online <a class="text-light-accent-500" href="https://convertr.org">here</a>
+</div>
+</div>
+</div>
+`;
+
+const convertingText = `
+Download in Progress ... 100 %
+<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M22.5 11C22.5 16.5228 18.0228 21 12.5 21C6.97715 21 2.5 16.5228 2.5 11C2.5 5.47715 6.97715 1 12.5 1C18.0228 1 22.5 5.47715 22.5 11ZM16.5303 7.96967C16.8232 8.26256 16.8232 8.73744 16.5303 9.0303L11.5303 14.0303C11.2374 14.3232 10.7626 14.3232 10.4697 14.0303L8.46967 12.0303C8.17678 11.7374 8.17678 11.2626 8.46967 10.9697C8.76256 10.6768 9.23744 10.6768 9.53033 10.9697L11 12.4393L13.2348 10.2045L15.4697 7.96967C15.7626 7.67678 16.2374 7.67678 16.5303 7.96967Z" fill="#55EFC4"/>
+</svg>
+`;
+
+const errorText = `
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 20C17.523 20 22 15.523 22 10C22 4.477 17.523 0 12 0C6.477 0 2 4.477 2 10C2 15.523 6.477 20 12 20ZM10.5 14.991C10.5 14.124 11.159 13.5 11.991 13.5C12.841 13.5 13.5 14.124 13.5 14.991C13.5 15.858 12.841 16.5 11.991 16.5C11.159 16.5 10.5 15.858 10.5 14.991ZM11.172 4C11.1045 4.00007 11.0378 4.01379 10.9757 4.04035C10.9137 4.0669 10.8577 4.10573 10.8111 4.1545C10.7645 4.20327 10.7282 4.26097 10.7045 4.32413C10.6807 4.38729 10.67 4.4546 10.673 4.522L10.979 11.522C10.9847 11.6508 11.0398 11.7724 11.133 11.8614C11.2262 11.9505 11.3501 12.0001 11.479 12H12.522C12.6509 12.0001 12.7748 11.9505 12.868 11.8614C12.9612 11.7724 13.0163 11.6508 13.022 11.522L13.327 4.522C13.33 4.45451 13.3192 4.38712 13.2954 4.3239C13.2717 4.26067 13.2353 4.20292 13.1886 4.15414C13.1418 4.10535 13.0857 4.06654 13.0236 4.04005C12.9614 4.01356 12.8946 3.99993 12.827 4H11.172Z" fill="#F5F6FA"/>
+</svg>
+Error
+`;
+
+const downloadText = `
+<svg width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 21.0002H16C18.8284 21.0002 20.2426 21.0002 21.1213 20.1215C22 19.2429 22 17.8286 22 15.0002V14.0002C22 11.1718 22 9.7576 21.1213 8.8789C20.3529 8.11051 19.175 8.01406 17 8.00195M7 8.00195C4.82497 8.01406 3.64706 8.11051 2.87868 8.87889C2 9.7576 2 11.1718 2 14.0002V15.0002C2 17.8286 2 19.2429 2.87868 20.1215C3.17848 20.4213 3.54062 20.6188 4 20.749" stroke="#F5F6FA" stroke-width="2" stroke-linecap="round"/>
+<path d="M12 1V14M12 14L9 10.5M12 14L15 10.5" stroke="#F5F6FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+Download to Your Device
+`;
+
+const placeholderTemplate = `
+<div class="container">
+<div class="result-container">
+<div class="result-content">
+<div class="video-thumb-placeholder">
+    <svg class="w-10 h-10 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+        <path d="M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z"/>
+    </svg>
+</div>
+<div class="video-details-placeholder">
+    <div class="tag-list-placeholder"></div>
+    <div class="flex flex-col gap-2 lg:gap-0">
+    <div class="video-title-placeholder"></div>
+    <p class="video-url-placeholder"></p>
+    </div>
+    <a href="" class="btn-download-placholder"></a>
+</div>
+</div>
+</div>
+</div>
+`;
+
+const playlistItemTemplate = `
+<div class="video-details">
+<div class="counter">1</div>
+<img src="https://i.ytimg.com/vi/SUogHvm4lNw/hqdefault.jpg" alt="">
+<div class="video-meta">
+<div class="video-title">Paris Evening Walk and Bike Ride - 4K - With Captions!</div>
+<p class="video-url"><span>URL:</span> <span class="item-url"></span></p>
+</div>
+</div>
+<div class="button-group button-playlist-group btn-download-group">
+<div class="btn-child-quality" data-quality="720" onclick="handlePlaylistQualityClick(event)">
+<span>MP4 (720p)</span>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" rx="6" fill="white" />
+<path d="M8 11L12 15L16 11" stroke="#2D3436" stroke-linecap="round" />
+</svg>
+</div>
+<button type="button" class="btn-child-download" onclick="downloadItemInPlaylist(event)">
+<svg width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path
+  d="M8 21.0002H16C18.8284 21.0002 20.2426 21.0002 21.1213 20.1215C22 19.2429 22 17.8286 22 15.0002V14.0002C22 11.1718 22 9.7576 21.1213 8.8789C20.3529 8.11051 19.175 8.01406 17 8.00195M7 8.00195C4.82497 8.01406 3.64706 8.11051 2.87868 8.87889C2 9.7576 2 11.1718 2 14.0002V15.0002C2 17.8286 2 19.2429 2.87868 20.1215C3.17848 20.4213 3.54062 20.6188 4 20.749"
+  stroke="white" stroke-width="2" stroke-linecap="round" />
+<path d="M12 1V14M12 14L9 10.5M12 14L15 10.5" stroke="white" stroke-width="2" stroke-linecap="round"
+  stroke-linejoin="round" />
+</svg>
+<span>Download</span>
+</button>
+</div>
+`;
+
+const playlistResultTemplate = `
+<div class="container">
+<div class="result-container">
+<div class="result-head">
+ <div class="top-actions">
+    <div class="tag-list">
+       <a href="">Video</a>
+       <a href="">Playlist</a>
+    </div>
+    <div class="toggle-list" onclick="collapsePlaylist(event)">
+       <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 5.5L5.5 1L1 5.5" stroke="#6C5CE7" stroke-linecap="round"/>
+       </svg>
+    </div>
+ </div>
+ <div class="playlist-title"></div>
+</div>
+<div class="playlist-content">
+ <div class="list-video">
+ </div>
+</div>
+</div>
+</div>
+`;
+
+</script>
+<script>
+const checkAdBlocker = () => {
+return new Promise((resolve, reject) => {
+let testAd = document.createElement("img");
+testAd.onload = () => {
+    resolve(false); // No ad blocker detected
+};
+testAd.onerror = () => {
+    resolve(true); // Ad blocker detected
+};
+testAd.src = "/ads.js";
+});
+};
+
+const isValidURL = (str) => {
+try {
+new URL(str);
+} catch (_) {
+return false;
+}
+
+return true;
+};
+
+function openit() {
+if (repeat_download == false) {
+var ad_url = "https://ab.cococococ.com/ajax/ad/l.php";
+repeat_download = true;
+} else {
+var ad_url =
+    "https://convertr.org/?utm_source=loader&utm_medium=loader&utm_campaign=loader";
+visited_convertr = true;
+}
+
+if (visited_convertr == true) {
+var ad_url = "https://ab.cococococ.com/ajax/ad/l.php";
+}
+
+// WIndow open ad_url
+window.open(ad_url, "_blank");
+}
+
+const getOS = () => {
+var userAgent = window.navigator.userAgent,
+platform = window.navigator.platform,
+macosPlatforms = ["Macintosh", "MacIntel", "MacPPC", "Mac68K"],
+windowsPlatforms = ["Win32", "Win64", "Windows", "WinCE"],
+iosPlatforms = ["iPhone", "iPad", "iPod"],
+os = null;
+
+if (macosPlatforms.indexOf(platform) !== -1) {
+os = "Mac OS";
+} else if (iosPlatforms.indexOf(platform) !== -1) {
+os = "iOS";
+} else if (windowsPlatforms.indexOf(platform) !== -1) {
+os = "Windows";
+} else if (/Android/.test(userAgent)) {
+os = "Android";
+} else if (!os && /Linux/.test(platform)) {
+os = "Linux";
+}
+
+return os;
+};
+
+checkAdBlocker()
+.then((isBlocking) => {
+if (isBlocking) {
+    using_adblocker = true;
+} else {
+    using_adblocker = false;
+}
+})
+.catch((error) => {
+console.error(error);
+});
+
+var os = getOS();
+var download_count = 0;
+var inprogressTimer = null;
+
+function a(url) {
+s = document.createElement("script");
+s.src = url;
+try {
+(document.body || document.documentElement).appendChild(s);
+} catch (e) {}
+}
+
+</script>
+<script>
+!(function (e, t) {
+"object" == typeof exports && "undefined" != typeof module
+? t(exports)
+: "function" == typeof define && define.amd
+? define(["exports"], t)
+: t(
+      ((e =
+          "undefined" != typeof globalThis
+              ? globalThis
+              : e || self).Popper = {})
+  );
+})(this, function (e) {
+"use strict";
+function t(e) {
+if (null == e) return window;
+if ("[object Window]" !== e.toString()) {
+    var t = e.ownerDocument;
+    return (t && t.defaultView) || window;
+}
+return e;
+}
+function n(e) {
+return e instanceof t(e).Element || e instanceof Element;
+}
+function r(e) {
+return e instanceof t(e).HTMLElement || e instanceof HTMLElement;
+}
+function o(e) {
+return (
+    "undefined" != typeof ShadowRoot &&
+    (e instanceof t(e).ShadowRoot || e instanceof ShadowRoot)
+);
+}
+var i = Math.max,
+a = Math.min,
+s = Math.round;
+function f() {
+var e = navigator.userAgentData;
+return null != e && e.brands && Array.isArray(e.brands)
+    ? e.brands
+          .map(function (e) {
+              return e.brand + "/" + e.version;
+          })
+          .join(" ")
+    : navigator.userAgent;
+}
+function c() {
+return !/^((?!chrome|android).)*safari/i.test(f());
+}
+function p(e, o, i) {
+void 0 === o && (o = !1), void 0 === i && (i = !1);
+var a = e.getBoundingClientRect(),
+    f = 1,
+    p = 1;
+o &&
+    r(e) &&
+    ((f = (e.offsetWidth > 0 && s(a.width) / e.offsetWidth) || 1),
+    (p = (e.offsetHeight > 0 && s(a.height) / e.offsetHeight) || 1));
+var u = (n(e) ? t(e) : window).visualViewport,
+    l = !c() && i,
+    d = (a.left + (l && u ? u.offsetLeft : 0)) / f,
+    h = (a.top + (l && u ? u.offsetTop : 0)) / p,
+    m = a.width / f,
+    v = a.height / p;
+return {
+    width: m,
+    height: v,
+    top: h,
+    right: d + m,
+    bottom: h + v,
+    left: d,
+    x: d,
+    y: h,
+};
+}
+function u(e) {
+var n = t(e);
+return { scrollLeft: n.pageXOffset, scrollTop: n.pageYOffset };
+}
+function l(e) {
+return e ? (e.nodeName || "").toLowerCase() : null;
+}
+function d(e) {
+return (
+    (n(e) ? e.ownerDocument : e.document) || window.document
+).documentElement;
+}
+function h(e) {
+return p(d(e)).left + u(e).scrollLeft;
+}
+function m(e) {
+return t(e).getComputedStyle(e);
+}
+function v(e) {
+var t = m(e),
+    n = t.overflow,
+    r = t.overflowX,
+    o = t.overflowY;
+return /auto|scroll|overlay|hidden/.test(n + o + r);
+}
+function y(e, n, o) {
+void 0 === o && (o = !1);
+var i,
+    a,
+    f = r(n),
+    c =
+        r(n) &&
+        (function (e) {
+            var t = e.getBoundingClientRect(),
+                n = s(t.width) / e.offsetWidth || 1,
+                r = s(t.height) / e.offsetHeight || 1;
+            return 1 !== n || 1 !== r;
+        })(n),
+    m = d(n),
+    y = p(e, c, o),
+    g = { scrollLeft: 0, scrollTop: 0 },
+    b = { x: 0, y: 0 };
+return (
+    (f || (!f && !o)) &&
+        (("body" !== l(n) || v(m)) &&
+            (g =
+                (i = n) !== t(i) && r(i)
+                    ? {
+                          scrollLeft: (a = i).scrollLeft,
+                          scrollTop: a.scrollTop,
+                      }
+                    : u(i)),
+        r(n)
+            ? (((b = p(n, !0)).x += n.clientLeft), (b.y += n.clientTop))
+            : m && (b.x = h(m))),
+    {
+        x: y.left + g.scrollLeft - b.x,
+        y: y.top + g.scrollTop - b.y,
+        width: y.width,
+        height: y.height,
+    }
+);
+}
+function g(e) {
+var t = p(e),
+    n = e.offsetWidth,
+    r = e.offsetHeight;
+return (
+    Math.abs(t.width - n) <= 1 && (n = t.width),
+    Math.abs(t.height - r) <= 1 && (r = t.height),
+    { x: e.offsetLeft, y: e.offsetTop, width: n, height: r }
+);
+}
+function b(e) {
+return "html" === l(e)
+    ? e
+    : e.assignedSlot || e.parentNode || (o(e) ? e.host : null) || d(e);
+}
+function x(e) {
+return ["html", "body", "#document"].indexOf(l(e)) >= 0
+    ? e.ownerDocument.body
+    : r(e) && v(e)
+    ? e
+    : x(b(e));
+}
+function w(e, n) {
+var r;
+void 0 === n && (n = []);
+var o = x(e),
+    i = o === (null == (r = e.ownerDocument) ? void 0 : r.body),
+    a = t(o),
+    s = i ? [a].concat(a.visualViewport || [], v(o) ? o : []) : o,
+    f = n.concat(s);
+return i ? f : f.concat(w(b(s)));
+}
+function O(e) {
+return ["table", "td", "th"].indexOf(l(e)) >= 0;
+}
+function j(e) {
+return r(e) && "fixed" !== m(e).position ? e.offsetParent : null;
+}
+function E(e) {
+for (var n = t(e), i = j(e); i && O(i) && "static" === m(i).position; )
+    i = j(i);
+return i &&
+    ("html" === l(i) || ("body" === l(i) && "static" === m(i).position))
+    ? n
+    : i ||
+          (function (e) {
+              var t = /firefox/i.test(f());
+              if (
+                  /Trident/i.test(f()) &&
+                  r(e) &&
+                  "fixed" === m(e).position
+              )
+                  return null;
+              var n = b(e);
+              for (
+                  o(n) && (n = n.host);
+                  r(n) && ["html", "body"].indexOf(l(n)) < 0;
+
+              ) {
+                  var i = m(n);
+                  if (
+                      "none" !== i.transform ||
+                      "none" !== i.perspective ||
+                      "paint" === i.contain ||
+                      -1 !==
+                          ["transform", "perspective"].indexOf(
+                              i.willChange
+                          ) ||
+                      (t && "filter" === i.willChange) ||
+                      (t && i.filter && "none" !== i.filter)
+                  )
+                      return n;
+                  n = n.parentNode;
+              }
+              return null;
+          })(e) ||
+          n;
+}
+var D = "top",
+A = "bottom",
+L = "right",
+P = "left",
+M = "auto",
+k = [D, A, L, P],
+W = "start",
+B = "end",
+H = "viewport",
+T = "popper",
+R = k.reduce(function (e, t) {
+    return e.concat([t + "-" + W, t + "-" + B]);
+}, []),
+S = [].concat(k, [M]).reduce(function (e, t) {
+    return e.concat([t, t + "-" + W, t + "-" + B]);
+}, []),
+V = [
+    "beforeRead",
+    "read",
+    "afterRead",
+    "beforeMain",
+    "main",
+    "afterMain",
+    "beforeWrite",
+    "write",
+    "afterWrite",
+];
+function q(e) {
+var t = new Map(),
+    n = new Set(),
+    r = [];
+function o(e) {
+    n.add(e.name),
+        []
+            .concat(e.requires || [], e.requiresIfExists || [])
+            .forEach(function (e) {
+                if (!n.has(e)) {
+                    var r = t.get(e);
+                    r && o(r);
+                }
+            }),
+        r.push(e);
+}
+return (
+    e.forEach(function (e) {
+        t.set(e.name, e);
+    }),
+    e.forEach(function (e) {
+        n.has(e.name) || o(e);
+    }),
+    r
+);
+}
+function C(e, t) {
+var n = t.getRootNode && t.getRootNode();
+if (e.contains(t)) return !0;
+if (n && o(n)) {
+    var r = t;
+    do {
+        if (r && e.isSameNode(r)) return !0;
+        r = r.parentNode || r.host;
+    } while (r);
+}
+return !1;
+}
+function N(e) {
+return Object.assign({}, e, {
+    left: e.x,
+    top: e.y,
+    right: e.x + e.width,
+    bottom: e.y + e.height,
+});
+}
+function I(e, r, o) {
+return r === H
+    ? N(
+          (function (e, n) {
+              var r = t(e),
+                  o = d(e),
+                  i = r.visualViewport,
+                  a = o.clientWidth,
+                  s = o.clientHeight,
+                  f = 0,
+                  p = 0;
+              if (i) {
+                  (a = i.width), (s = i.height);
+                  var u = c();
+                  (u || (!u && "fixed" === n)) &&
+                      ((f = i.offsetLeft), (p = i.offsetTop));
+              }
+              return { width: a, height: s, x: f + h(e), y: p };
+          })(e, o)
+      )
+    : n(r)
+    ? (function (e, t) {
+          var n = p(e, !1, "fixed" === t);
+          return (
+              (n.top = n.top + e.clientTop),
+              (n.left = n.left + e.clientLeft),
+              (n.bottom = n.top + e.clientHeight),
+              (n.right = n.left + e.clientWidth),
+              (n.width = e.clientWidth),
+              (n.height = e.clientHeight),
+              (n.x = n.left),
+              (n.y = n.top),
+              n
+          );
+      })(r, o)
+    : N(
+          (function (e) {
+              var t,
+                  n = d(e),
+                  r = u(e),
+                  o = null == (t = e.ownerDocument) ? void 0 : t.body,
+                  a = i(
+                      n.scrollWidth,
+                      n.clientWidth,
+                      o ? o.scrollWidth : 0,
+                      o ? o.clientWidth : 0
+                  ),
+                  s = i(
+                      n.scrollHeight,
+                      n.clientHeight,
+                      o ? o.scrollHeight : 0,
+                      o ? o.clientHeight : 0
+                  ),
+                  f = -r.scrollLeft + h(e),
+                  c = -r.scrollTop;
+              return (
+                  "rtl" === m(o || n).direction &&
+                      (f +=
+                          i(n.clientWidth, o ? o.clientWidth : 0) - a),
+                  { width: a, height: s, x: f, y: c }
+              );
+          })(d(e))
+      );
+}
+function _(e, t, o, s) {
+var f =
+        "clippingParents" === t
+            ? (function (e) {
+                  var t = w(b(e)),
+                      o =
+                          ["absolute", "fixed"].indexOf(
+                              m(e).position
+                          ) >= 0 && r(e)
+                              ? E(e)
+                              : e;
+                  return n(o)
+                      ? t.filter(function (e) {
+                            return n(e) && C(e, o) && "body" !== l(e);
+                        })
+                      : [];
+              })(e)
+            : [].concat(t),
+    c = [].concat(f, [o]),
+    p = c[0],
+    u = c.reduce(function (t, n) {
+        var r = I(e, n, s);
+        return (
+            (t.top = i(r.top, t.top)),
+            (t.right = a(r.right, t.right)),
+            (t.bottom = a(r.bottom, t.bottom)),
+            (t.left = i(r.left, t.left)),
+            t
+        );
+    }, I(e, p, s));
+return (
+    (u.width = u.right - u.left),
+    (u.height = u.bottom - u.top),
+    (u.x = u.left),
+    (u.y = u.top),
+    u
+);
+}
+function F(e) {
+return e.split("-")[0];
+}
+function U(e) {
+return e.split("-")[1];
+}
+function z(e) {
+return ["top", "bottom"].indexOf(e) >= 0 ? "x" : "y";
+}
+function X(e) {
+var t,
+    n = e.reference,
+    r = e.element,
+    o = e.placement,
+    i = o ? F(o) : null,
+    a = o ? U(o) : null,
+    s = n.x + n.width / 2 - r.width / 2,
+    f = n.y + n.height / 2 - r.height / 2;
+switch (i) {
+    case D:
+        t = { x: s, y: n.y - r.height };
+        break;
+    case A:
+        t = { x: s, y: n.y + n.height };
+        break;
+    case L:
+        t = { x: n.x + n.width, y: f };
+        break;
+    case P:
+        t = { x: n.x - r.width, y: f };
+        break;
+    default:
+        t = { x: n.x, y: n.y };
+}
+var c = i ? z(i) : null;
+if (null != c) {
+    var p = "y" === c ? "height" : "width";
+    switch (a) {
+        case W:
+            t[c] = t[c] - (n[p] / 2 - r[p] / 2);
+            break;
+        case B:
+            t[c] = t[c] + (n[p] / 2 - r[p] / 2);
+    }
+}
+return t;
+}
+function Y(e) {
+return Object.assign({}, { top: 0, right: 0, bottom: 0, left: 0 }, e);
+}
+function G(e, t) {
+return t.reduce(function (t, n) {
+    return (t[n] = e), t;
+}, {});
+}
+function J(e, t) {
+void 0 === t && (t = {});
+var r = t,
+    o = r.placement,
+    i = void 0 === o ? e.placement : o,
+    a = r.strategy,
+    s = void 0 === a ? e.strategy : a,
+    f = r.boundary,
+    c = void 0 === f ? "clippingParents" : f,
+    u = r.rootBoundary,
+    l = void 0 === u ? H : u,
+    h = r.elementContext,
+    m = void 0 === h ? T : h,
+    v = r.altBoundary,
+    y = void 0 !== v && v,
+    g = r.padding,
+    b = void 0 === g ? 0 : g,
+    x = Y("number" != typeof b ? b : G(b, k)),
+    w = m === T ? "reference" : T,
+    O = e.rects.popper,
+    j = e.elements[y ? w : m],
+    E = _(n(j) ? j : j.contextElement || d(e.elements.popper), c, l, s),
+    P = p(e.elements.reference),
+    M = X({
+        reference: P,
+        element: O,
+        strategy: "absolute",
+        placement: i,
+    }),
+    W = N(Object.assign({}, O, M)),
+    B = m === T ? W : P,
+    R = {
+        top: E.top - B.top + x.top,
+        bottom: B.bottom - E.bottom + x.bottom,
+        left: E.left - B.left + x.left,
+        right: B.right - E.right + x.right,
+    },
+    S = e.modifiersData.offset;
+if (m === T && S) {
+    var V = S[i];
+    Object.keys(R).forEach(function (e) {
+        var t = [L, A].indexOf(e) >= 0 ? 1 : -1,
+            n = [D, A].indexOf(e) >= 0 ? "y" : "x";
+        R[e] += V[n] * t;
+    });
+}
+return R;
+}
+var K = { placement: "bottom", modifiers: [], strategy: "absolute" };
+function Q() {
+for (var e = arguments.length, t = new Array(e), n = 0; n < e; n++)
+    t[n] = arguments[n];
+return !t.some(function (e) {
+    return !(e && "function" == typeof e.getBoundingClientRect);
+});
+}
+function Z(e) {
+void 0 === e && (e = {});
+var t = e,
+    r = t.defaultModifiers,
+    o = void 0 === r ? [] : r,
+    i = t.defaultOptions,
+    a = void 0 === i ? K : i;
+return function (e, t, r) {
+    void 0 === r && (r = a);
+    var i,
+        s,
+        f = {
+            placement: "bottom",
+            orderedModifiers: [],
+            options: Object.assign({}, K, a),
+            modifiersData: {},
+            elements: { reference: e, popper: t },
+            attributes: {},
+            styles: {},
+        },
+        c = [],
+        p = !1,
+        u = {
+            state: f,
+            setOptions: function (r) {
+                var i = "function" == typeof r ? r(f.options) : r;
+                l(),
+                    (f.options = Object.assign({}, a, f.options, i)),
+                    (f.scrollParents = {
+                        reference: n(e)
+                            ? w(e)
+                            : e.contextElement
+                            ? w(e.contextElement)
+                            : [],
+                        popper: w(t),
+                    });
+                var s,
+                    p,
+                    d = (function (e) {
+                        var t = q(e);
+                        return V.reduce(function (e, n) {
+                            return e.concat(
+                                t.filter(function (e) {
+                                    return e.phase === n;
+                                })
+                            );
+                        }, []);
+                    })(
+                        ((s = [].concat(o, f.options.modifiers)),
+                        (p = s.reduce(function (e, t) {
+                            var n = e[t.name];
+                            return (
+                                (e[t.name] = n
+                                    ? Object.assign({}, n, t, {
+                                          options: Object.assign(
+                                              {},
+                                              n.options,
+                                              t.options
+                                          ),
+                                          data: Object.assign(
+                                              {},
+                                              n.data,
+                                              t.data
+                                          ),
+                                      })
+                                    : t),
+                                e
+                            );
+                        }, {})),
+                        Object.keys(p).map(function (e) {
+                            return p[e];
+                        }))
+                    );
+                return (
+                    (f.orderedModifiers = d.filter(function (e) {
+                        return e.enabled;
+                    })),
+                    f.orderedModifiers.forEach(function (e) {
+                        var t = e.name,
+                            n = e.options,
+                            r = void 0 === n ? {} : n,
+                            o = e.effect;
+                        if ("function" == typeof o) {
+                            var i = o({
+                                    state: f,
+                                    name: t,
+                                    instance: u,
+                                    options: r,
+                                }),
+                                a = function () {};
+                            c.push(i || a);
+                        }
+                    }),
+                    u.update()
+                );
+            },
+            forceUpdate: function () {
+                if (!p) {
+                    var e = f.elements,
+                        t = e.reference,
+                        n = e.popper;
+                    if (Q(t, n)) {
+                        (f.rects = {
+                            reference: y(
+                                t,
+                                E(n),
+                                "fixed" === f.options.strategy
+                            ),
+                            popper: g(n),
+                        }),
+                            (f.reset = !1),
+                            (f.placement = f.options.placement),
+                            f.orderedModifiers.forEach(function (e) {
+                                return (f.modifiersData[e.name] =
+                                    Object.assign({}, e.data));
+                            });
+                        for (
+                            var r = 0;
+                            r < f.orderedModifiers.length;
+                            r++
+                        )
+                            if (!0 !== f.reset) {
+                                var o = f.orderedModifiers[r],
+                                    i = o.fn,
+                                    a = o.options,
+                                    s = void 0 === a ? {} : a,
+                                    c = o.name;
+                                "function" == typeof i &&
+                                    (f =
+                                        i({
+                                            state: f,
+                                            options: s,
+                                            name: c,
+                                            instance: u,
+                                        }) || f);
+                            } else (f.reset = !1), (r = -1);
+                    }
+                }
+            },
+            update:
+                ((i = function () {
+                    return new Promise(function (e) {
+                        u.forceUpdate(), e(f);
+                    });
+                }),
+                function () {
+                    return (
+                        s ||
+                            (s = new Promise(function (e) {
+                                Promise.resolve().then(function () {
+                                    (s = void 0), e(i());
+                                });
+                            })),
+                        s
+                    );
+                }),
+            destroy: function () {
+                l(), (p = !0);
+            },
+        };
+    if (!Q(e, t)) return u;
+    function l() {
+        c.forEach(function (e) {
+            return e();
+        }),
+            (c = []);
+    }
+    return (
+        u.setOptions(r).then(function (e) {
+            !p && r.onFirstUpdate && r.onFirstUpdate(e);
+        }),
+        u
+    );
+};
+}
+var $ = { passive: !0 };
+var ee = {
+name: "eventListeners",
+enabled: !0,
+phase: "write",
+fn: function () {},
+effect: function (e) {
+    var n = e.state,
+        r = e.instance,
+        o = e.options,
+        i = o.scroll,
+        a = void 0 === i || i,
+        s = o.resize,
+        f = void 0 === s || s,
+        c = t(n.elements.popper),
+        p = [].concat(
+            n.scrollParents.reference,
+            n.scrollParents.popper
+        );
+    return (
+        a &&
+            p.forEach(function (e) {
+                e.addEventListener("scroll", r.update, $);
+            }),
+        f && c.addEventListener("resize", r.update, $),
+        function () {
+            a &&
+                p.forEach(function (e) {
+                    e.removeEventListener("scroll", r.update, $);
+                }),
+                f && c.removeEventListener("resize", r.update, $);
+        }
+    );
+},
+data: {},
+};
+var te = {
+    name: "popperOffsets",
+    enabled: !0,
+    phase: "read",
+    fn: function (e) {
+        var t = e.state,
+            n = e.name;
+        t.modifiersData[n] = X({
+            reference: t.rects.reference,
+            element: t.rects.popper,
+            strategy: "absolute",
+            placement: t.placement,
+        });
+    },
+    data: {},
+},
+ne = { top: "auto", right: "auto", bottom: "auto", left: "auto" };
+function re(e) {
+var n,
+    r = e.popper,
+    o = e.popperRect,
+    i = e.placement,
+    a = e.variation,
+    f = e.offsets,
+    c = e.position,
+    p = e.gpuAcceleration,
+    u = e.adaptive,
+    l = e.roundOffsets,
+    h = e.isFixed,
+    v = f.x,
+    y = void 0 === v ? 0 : v,
+    g = f.y,
+    b = void 0 === g ? 0 : g,
+    x = "function" == typeof l ? l({ x: y, y: b }) : { x: y, y: b };
+(y = x.x), (b = x.y);
+var w = f.hasOwnProperty("x"),
+    O = f.hasOwnProperty("y"),
+    j = P,
+    M = D,
+    k = window;
+if (u) {
+    var W = E(r),
+        H = "clientHeight",
+        T = "clientWidth";
+    if (
+        (W === t(r) &&
+            "static" !== m((W = d(r))).position &&
+            "absolute" === c &&
+            ((H = "scrollHeight"), (T = "scrollWidth")),
+        (W = W),
+        i === D || ((i === P || i === L) && a === B))
+    )
+        (M = A),
+            (b -=
+                (h && W === k && k.visualViewport
+                    ? k.visualViewport.height
+                    : W[H]) - o.height),
+            (b *= p ? 1 : -1);
+    if (i === P || ((i === D || i === A) && a === B))
+        (j = L),
+            (y -=
+                (h && W === k && k.visualViewport
+                    ? k.visualViewport.width
+                    : W[T]) - o.width),
+            (y *= p ? 1 : -1);
+}
+var R,
+    S = Object.assign({ position: c }, u && ne),
+    V =
+        !0 === l
+            ? (function (e, t) {
+                  var n = e.x,
+                      r = e.y,
+                      o = t.devicePixelRatio || 1;
+                  return { x: s(n * o) / o || 0, y: s(r * o) / o || 0 };
+              })({ x: y, y: b }, t(r))
+            : { x: y, y: b };
+return (
+    (y = V.x),
+    (b = V.y),
+    p
+        ? Object.assign(
+              {},
+              S,
+              (((R = {})[M] = O ? "0" : ""),
+              (R[j] = w ? "0" : ""),
+              (R.transform =
+                  (k.devicePixelRatio || 1) <= 1
+                      ? "translate(" + y + "px, " + b + "px)"
+                      : "translate3d(" + y + "px, " + b + "px, 0)"),
+              R)
+          )
+        : Object.assign(
+              {},
+              S,
+              (((n = {})[M] = O ? b + "px" : ""),
+              (n[j] = w ? y + "px" : ""),
+              (n.transform = ""),
+              n)
+          )
+);
+}
+var oe = {
+name: "computeStyles",
+enabled: !0,
+phase: "beforeWrite",
+fn: function (e) {
+    var t = e.state,
+        n = e.options,
+        r = n.gpuAcceleration,
+        o = void 0 === r || r,
+        i = n.adaptive,
+        a = void 0 === i || i,
+        s = n.roundOffsets,
+        f = void 0 === s || s,
+        c = {
+            placement: F(t.placement),
+            variation: U(t.placement),
+            popper: t.elements.popper,
+            popperRect: t.rects.popper,
+            gpuAcceleration: o,
+            isFixed: "fixed" === t.options.strategy,
+        };
+    null != t.modifiersData.popperOffsets &&
+        (t.styles.popper = Object.assign(
+            {},
+            t.styles.popper,
+            re(
+                Object.assign({}, c, {
+                    offsets: t.modifiersData.popperOffsets,
+                    position: t.options.strategy,
+                    adaptive: a,
+                    roundOffsets: f,
+                })
+            )
+        )),
+        null != t.modifiersData.arrow &&
+            (t.styles.arrow = Object.assign(
+                {},
+                t.styles.arrow,
+                re(
+                    Object.assign({}, c, {
+                        offsets: t.modifiersData.arrow,
+                        position: "absolute",
+                        adaptive: !1,
+                        roundOffsets: f,
+                    })
+                )
+            )),
+        (t.attributes.popper = Object.assign({}, t.attributes.popper, {
+            "data-popper-placement": t.placement,
+        }));
+},
+data: {},
+};
+var ie = {
+name: "applyStyles",
+enabled: !0,
+phase: "write",
+fn: function (e) {
+    var t = e.state;
+    Object.keys(t.elements).forEach(function (e) {
+        var n = t.styles[e] || {},
+            o = t.attributes[e] || {},
+            i = t.elements[e];
+        r(i) &&
+            l(i) &&
+            (Object.assign(i.style, n),
+            Object.keys(o).forEach(function (e) {
+                var t = o[e];
+                !1 === t
+                    ? i.removeAttribute(e)
+                    : i.setAttribute(e, !0 === t ? "" : t);
+            }));
+    });
+},
+effect: function (e) {
+    var t = e.state,
+        n = {
+            popper: {
+                position: t.options.strategy,
+                left: "0",
+                top: "0",
+                margin: "0",
+            },
+            arrow: { position: "absolute" },
+            reference: {},
+        };
+    return (
+        Object.assign(t.elements.popper.style, n.popper),
+        (t.styles = n),
+        t.elements.arrow &&
+            Object.assign(t.elements.arrow.style, n.arrow),
+        function () {
+            Object.keys(t.elements).forEach(function (e) {
+                var o = t.elements[e],
+                    i = t.attributes[e] || {},
+                    a = Object.keys(
+                        t.styles.hasOwnProperty(e) ? t.styles[e] : n[e]
+                    ).reduce(function (e, t) {
+                        return (e[t] = ""), e;
+                    }, {});
+                r(o) &&
+                    l(o) &&
+                    (Object.assign(o.style, a),
+                    Object.keys(i).forEach(function (e) {
+                        o.removeAttribute(e);
+                    }));
+            });
+        }
+    );
+},
+requires: ["computeStyles"],
+};
+var ae = {
+    name: "offset",
+    enabled: !0,
+    phase: "main",
+    requires: ["popperOffsets"],
+    fn: function (e) {
+        var t = e.state,
+            n = e.options,
+            r = e.name,
+            o = n.offset,
+            i = void 0 === o ? [0, 0] : o,
+            a = S.reduce(function (e, n) {
+                return (
+                    (e[n] = (function (e, t, n) {
+                        var r = F(e),
+                            o = [P, D].indexOf(r) >= 0 ? -1 : 1,
+                            i =
+                                "function" == typeof n
+                                    ? n(
+                                          Object.assign({}, t, {
+                                              placement: e,
+                                          })
+                                      )
+                                    : n,
+                            a = i[0],
+                            s = i[1];
+                        return (
+                            (a = a || 0),
+                            (s = (s || 0) * o),
+                            [P, L].indexOf(r) >= 0
+                                ? { x: s, y: a }
+                                : { x: a, y: s }
+                        );
+                    })(n, t.rects, i)),
+                    e
+                );
+            }, {}),
+            s = a[t.placement],
+            f = s.x,
+            c = s.y;
+        null != t.modifiersData.popperOffsets &&
+            ((t.modifiersData.popperOffsets.x += f),
+            (t.modifiersData.popperOffsets.y += c)),
+            (t.modifiersData[r] = a);
+    },
+},
+se = { left: "right", right: "left", bottom: "top", top: "bottom" };
+function fe(e) {
+return e.replace(/left|right|bottom|top/g, function (e) {
+    return se[e];
+});
+}
+var ce = { start: "end", end: "start" };
+function pe(e) {
+return e.replace(/start|end/g, function (e) {
+    return ce[e];
+});
+}
+function ue(e, t) {
+void 0 === t && (t = {});
+var n = t,
+    r = n.placement,
+    o = n.boundary,
+    i = n.rootBoundary,
+    a = n.padding,
+    s = n.flipVariations,
+    f = n.allowedAutoPlacements,
+    c = void 0 === f ? S : f,
+    p = U(r),
+    u = p
+        ? s
+            ? R
+            : R.filter(function (e) {
+                  return U(e) === p;
+              })
+        : k,
+    l = u.filter(function (e) {
+        return c.indexOf(e) >= 0;
+    });
+0 === l.length && (l = u);
+var d = l.reduce(function (t, n) {
+    return (
+        (t[n] = J(e, {
+            placement: n,
+            boundary: o,
+            rootBoundary: i,
+            padding: a,
+        })[F(n)]),
+        t
+    );
+}, {});
+return Object.keys(d).sort(function (e, t) {
+    return d[e] - d[t];
+});
+}
+var le = {
+name: "flip",
+enabled: !0,
+phase: "main",
+fn: function (e) {
+    var t = e.state,
+        n = e.options,
+        r = e.name;
+    if (!t.modifiersData[r]._skip) {
+        for (
+            var o = n.mainAxis,
+                i = void 0 === o || o,
+                a = n.altAxis,
+                s = void 0 === a || a,
+                f = n.fallbackPlacements,
+                c = n.padding,
+                p = n.boundary,
+                u = n.rootBoundary,
+                l = n.altBoundary,
+                d = n.flipVariations,
+                h = void 0 === d || d,
+                m = n.allowedAutoPlacements,
+                v = t.options.placement,
+                y = F(v),
+                g =
+                    f ||
+                    (y === v || !h
+                        ? [fe(v)]
+                        : (function (e) {
+                              if (F(e) === M) return [];
+                              var t = fe(e);
+                              return [pe(e), t, pe(t)];
+                          })(v)),
+                b = [v].concat(g).reduce(function (e, n) {
+                    return e.concat(
+                        F(n) === M
+                            ? ue(t, {
+                                  placement: n,
+                                  boundary: p,
+                                  rootBoundary: u,
+                                  padding: c,
+                                  flipVariations: h,
+                                  allowedAutoPlacements: m,
+                              })
+                            : n
+                    );
+                }, []),
+                x = t.rects.reference,
+                w = t.rects.popper,
+                O = new Map(),
+                j = !0,
+                E = b[0],
+                k = 0;
+            k < b.length;
+            k++
+        ) {
+            var B = b[k],
+                H = F(B),
+                T = U(B) === W,
+                R = [D, A].indexOf(H) >= 0,
+                S = R ? "width" : "height",
+                V = J(t, {
+                    placement: B,
+                    boundary: p,
+                    rootBoundary: u,
+                    altBoundary: l,
+                    padding: c,
+                }),
+                q = R ? (T ? L : P) : T ? A : D;
+            x[S] > w[S] && (q = fe(q));
+            var C = fe(q),
+                N = [];
+            if (
+                (i && N.push(V[H] <= 0),
+                s && N.push(V[q] <= 0, V[C] <= 0),
+                N.every(function (e) {
+                    return e;
+                }))
+            ) {
+                (E = B), (j = !1);
+                break;
+            }
+            O.set(B, N);
+        }
+        if (j)
+            for (
+                var I = function (e) {
+                        var t = b.find(function (t) {
+                            var n = O.get(t);
+                            if (n)
+                                return n
+                                    .slice(0, e)
+                                    .every(function (e) {
+                                        return e;
+                                    });
+                        });
+                        if (t) return (E = t), "break";
+                    },
+                    _ = h ? 3 : 1;
+                _ > 0;
+                _--
+            ) {
+                if ("break" === I(_)) break;
+            }
+        t.placement !== E &&
+            ((t.modifiersData[r]._skip = !0),
+            (t.placement = E),
+            (t.reset = !0));
+    }
+},
+requiresIfExists: ["offset"],
+data: { _skip: !1 },
+};
+function de(e, t, n) {
+return i(e, a(t, n));
+}
+var he = {
+name: "preventOverflow",
+enabled: !0,
+phase: "main",
+fn: function (e) {
+    var t = e.state,
+        n = e.options,
+        r = e.name,
+        o = n.mainAxis,
+        s = void 0 === o || o,
+        f = n.altAxis,
+        c = void 0 !== f && f,
+        p = n.boundary,
+        u = n.rootBoundary,
+        l = n.altBoundary,
+        d = n.padding,
+        h = n.tether,
+        m = void 0 === h || h,
+        v = n.tetherOffset,
+        y = void 0 === v ? 0 : v,
+        b = J(t, {
+            boundary: p,
+            rootBoundary: u,
+            padding: d,
+            altBoundary: l,
+        }),
+        x = F(t.placement),
+        w = U(t.placement),
+        O = !w,
+        j = z(x),
+        M = "x" === j ? "y" : "x",
+        k = t.modifiersData.popperOffsets,
+        B = t.rects.reference,
+        H = t.rects.popper,
+        T =
+            "function" == typeof y
+                ? y(
+                      Object.assign({}, t.rects, {
+                          placement: t.placement,
+                      })
+                  )
+                : y,
+        R =
+            "number" == typeof T
+                ? { mainAxis: T, altAxis: T }
+                : Object.assign({ mainAxis: 0, altAxis: 0 }, T),
+        S = t.modifiersData.offset
+            ? t.modifiersData.offset[t.placement]
+            : null,
+        V = { x: 0, y: 0 };
+    if (k) {
+        if (s) {
+            var q,
+                C = "y" === j ? D : P,
+                N = "y" === j ? A : L,
+                I = "y" === j ? "height" : "width",
+                _ = k[j],
+                X = _ + b[C],
+                Y = _ - b[N],
+                G = m ? -H[I] / 2 : 0,
+                K = w === W ? B[I] : H[I],
+                Q = w === W ? -H[I] : -B[I],
+                Z = t.elements.arrow,
+                $ = m && Z ? g(Z) : { width: 0, height: 0 },
+                ee = t.modifiersData["arrow#persistent"]
+                    ? t.modifiersData["arrow#persistent"].padding
+                    : { top: 0, right: 0, bottom: 0, left: 0 },
+                te = ee[C],
+                ne = ee[N],
+                re = de(0, B[I], $[I]),
+                oe = O
+                    ? B[I] / 2 - G - re - te - R.mainAxis
+                    : K - re - te - R.mainAxis,
+                ie = O
+                    ? -B[I] / 2 + G + re + ne + R.mainAxis
+                    : Q + re + ne + R.mainAxis,
+                ae = t.elements.arrow && E(t.elements.arrow),
+                se = ae
+                    ? "y" === j
+                        ? ae.clientTop || 0
+                        : ae.clientLeft || 0
+                    : 0,
+                fe = null != (q = null == S ? void 0 : S[j]) ? q : 0,
+                ce = _ + ie - fe,
+                pe = de(
+                    m ? a(X, _ + oe - fe - se) : X,
+                    _,
+                    m ? i(Y, ce) : Y
+                );
+            (k[j] = pe), (V[j] = pe - _);
+        }
+        if (c) {
+            var ue,
+                le = "x" === j ? D : P,
+                he = "x" === j ? A : L,
+                me = k[M],
+                ve = "y" === M ? "height" : "width",
+                ye = me + b[le],
+                ge = me - b[he],
+                be = -1 !== [D, P].indexOf(x),
+                xe = null != (ue = null == S ? void 0 : S[M]) ? ue : 0,
+                we = be ? ye : me - B[ve] - H[ve] - xe + R.altAxis,
+                Oe = be ? me + B[ve] + H[ve] - xe - R.altAxis : ge,
+                je =
+                    m && be
+                        ? (function (e, t, n) {
+                              var r = de(e, t, n);
+                              return r > n ? n : r;
+                          })(we, me, Oe)
+                        : de(m ? we : ye, me, m ? Oe : ge);
+            (k[M] = je), (V[M] = je - me);
+        }
+        t.modifiersData[r] = V;
+    }
+},
+requiresIfExists: ["offset"],
+};
+var me = {
+name: "arrow",
+enabled: !0,
+phase: "main",
+fn: function (e) {
+    var t,
+        n = e.state,
+        r = e.name,
+        o = e.options,
+        i = n.elements.arrow,
+        a = n.modifiersData.popperOffsets,
+        s = F(n.placement),
+        f = z(s),
+        c = [P, L].indexOf(s) >= 0 ? "height" : "width";
+    if (i && a) {
+        var p = (function (e, t) {
+                return Y(
+                    "number" !=
+                        typeof (e =
+                            "function" == typeof e
+                                ? e(
+                                      Object.assign({}, t.rects, {
+                                          placement: t.placement,
+                                      })
+                                  )
+                                : e)
+                        ? e
+                        : G(e, k)
+                );
+            })(o.padding, n),
+            u = g(i),
+            l = "y" === f ? D : P,
+            d = "y" === f ? A : L,
+            h =
+                n.rects.reference[c] +
+                n.rects.reference[f] -
+                a[f] -
+                n.rects.popper[c],
+            m = a[f] - n.rects.reference[f],
+            v = E(i),
+            y = v
+                ? "y" === f
+                    ? v.clientHeight || 0
+                    : v.clientWidth || 0
+                : 0,
+            b = h / 2 - m / 2,
+            x = p[l],
+            w = y - u[c] - p[d],
+            O = y / 2 - u[c] / 2 + b,
+            j = de(x, O, w),
+            M = f;
+        n.modifiersData[r] =
+            (((t = {})[M] = j), (t.centerOffset = j - O), t);
+    }
+},
+effect: function (e) {
+    var t = e.state,
+        n = e.options.element,
+        r = void 0 === n ? "[data-popper-arrow]" : n;
+    null != r &&
+        ("string" != typeof r ||
+            (r = t.elements.popper.querySelector(r))) &&
+        C(t.elements.popper, r) &&
+        (t.elements.arrow = r);
+},
+requires: ["popperOffsets"],
+requiresIfExists: ["preventOverflow"],
+};
+function ve(e, t, n) {
+return (
+    void 0 === n && (n = { x: 0, y: 0 }),
+    {
+        top: e.top - t.height - n.y,
+        right: e.right - t.width + n.x,
+        bottom: e.bottom - t.height + n.y,
+        left: e.left - t.width - n.x,
+    }
+);
+}
+function ye(e) {
+return [D, L, A, P].some(function (t) {
+    return e[t] >= 0;
+});
+}
+var ge = {
+    name: "hide",
+    enabled: !0,
+    phase: "main",
+    requiresIfExists: ["preventOverflow"],
+    fn: function (e) {
+        var t = e.state,
+            n = e.name,
+            r = t.rects.reference,
+            o = t.rects.popper,
+            i = t.modifiersData.preventOverflow,
+            a = J(t, { elementContext: "reference" }),
+            s = J(t, { altBoundary: !0 }),
+            f = ve(a, r),
+            c = ve(s, o, i),
+            p = ye(f),
+            u = ye(c);
+        (t.modifiersData[n] = {
+            referenceClippingOffsets: f,
+            popperEscapeOffsets: c,
+            isReferenceHidden: p,
+            hasPopperEscaped: u,
+        }),
+            (t.attributes.popper = Object.assign(
+                {},
+                t.attributes.popper,
+                {
+                    "data-popper-reference-hidden": p,
+                    "data-popper-escaped": u,
+                }
+            ));
+    },
+},
+be = Z({ defaultModifiers: [ee, te, oe, ie] }),
+xe = [ee, te, oe, ie, ae, le, he, me, ge],
+we = Z({ defaultModifiers: xe });
+(e.applyStyles = ie),
+(e.arrow = me),
+(e.computeStyles = oe),
+(e.createPopper = we),
+(e.createPopperLite = be),
+(e.defaultModifiers = xe),
+(e.detectOverflow = J),
+(e.eventListeners = ee),
+(e.flip = le),
+(e.hide = ge),
+(e.offset = ae),
+(e.popperGenerator = Z),
+(e.popperOffsets = te),
+(e.preventOverflow = he),
+Object.defineProperty(e, "__esModule", { value: !0 });
+});
+
+</script>
+<script>
+const createPopover = (target, popover) => {
+if (oldPopper) {
+oldPopper.destroy();
+}
+oldPopper = Popper.createPopper(target, popover, {
+placement: "bottom-start",
+});
+};
+
+function darkThemeEnabled() {
+if (
+localStorage.getItem("color-theme") === "dark" ||
+(!("color-theme" in localStorage) &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
+)
+return true;
+}
+
+// On page load or when changing themes, best to add inline in `head` to avoid FOUC
+if (darkThemeEnabled()) {
+document.documentElement.classList.add("dark");
+themeSwitcher.checked = true;
+themeSwitcherMobile.checked = true;
+} else {
+document.documentElement.classList.remove("dark");
+}
+
+themeSwitcher.addEventListener("click", function () {
+// if set via local storage previously
+if (localStorage.getItem("color-theme")) {
+if (localStorage.getItem("color-theme") === "light") {
+    document.documentElement.classList.add("dark");
+    localStorage.setItem("color-theme", "dark");
+} else {
+    document.documentElement.classList.remove("dark");
+    localStorage.setItem("color-theme", "light");
+}
+
+// if NOT set via local storage previously
+} else {
+if (document.documentElement.classList.contains("dark")) {
+    document.documentElement.classList.remove("dark");
+    localStorage.setItem("color-theme", "light");
+} else {
+    document.documentElement.classList.add("dark");
+    localStorage.setItem("color-theme", "dark");
+}
+}
+});
+
+if (themeSwitcherMobile) {
+themeSwitcherMobile.addEventListener("click", function () {
+// if set via local storage previously
+if (localStorage.getItem("color-theme")) {
+    if (localStorage.getItem("color-theme") === "light") {
+        document.documentElement.classList.add("dark");
+        localStorage.setItem("color-theme", "dark");
+    } else {
+        document.documentElement.classList.remove("dark");
+        localStorage.setItem("color-theme", "light");
+    }
+
+    // if NOT set via local storage previously
+} else {
+    if (document.documentElement.classList.contains("dark")) {
+        document.documentElement.classList.remove("dark");
+        localStorage.setItem("color-theme", "light");
+    } else {
+        document.documentElement.classList.add("dark");
+        localStorage.setItem("color-theme", "dark");
+    }
+}
+});
+}
+
+</script>
+<script>
+if (qualityList) {
+qualityList.addEventListener("click", function (e) {
+if (e.target.tagName !== "LI") {
+    return;
+}
+
+qualityItems.forEach((list) => list.classList.remove("active"));
+e.target.classList.add("active");
+
+const _currentQualityBtn = document.querySelector(".open-quality");
+_currentQualityBtn.querySelector("span").innerHTML = e.target.innerText;
+_currentQualityBtn.dataset.quality = e.target.dataset.value;
+
+hideAllQualityPopover();
+const popover = document.querySelector(".popover-quality");
+popover.classList.add("hidden");
+});
+}
+
+if (btnQuality) {
+btnQuality.addEventListener("click", (e) => {
+e.preventDefault();
+const target = document.querySelector(".btn-quality");
+const popover = document.querySelector(".popover-quality");
+createPopover(target, popover);
+
+if (btnQuality.classList.contains("open-quality")) {
+    target.classList.remove("open-quality");
+    popover.classList.add("hidden");
+} else {
+    target.classList.add("open-quality");
+    popover.classList.remove("hidden");
+}
+});
+}
+
+if (menuControl) {
+menuControl.addEventListener("click", (evt) => {
+evt.preventDefault();
+html.classList.add("open-nav");
+});
+}
+
+if (mobileToggle) {
+mobileToggle.addEventListener("click", (evt) => {
+evt.preventDefault();
+html.classList.remove("open-nav");
+});
+}
+
+</script>
+<script>
+(function () {
+const url = new URL(window.location.href);
+const clickID = url.searchParams.get("click_id");
+const sourceID = url.searchParams.get("source_id");
+
+const s = document.createElement("script");
+s.dataset.cfasync = "false";
+s.src = "https://push-sdk.com/f/sdk.js?z=1081333";
+s.onload = (opts) => {
+opts.zoneID = 1081333;
+opts.extClickID = clickID;
+opts.subID1 = sourceID;
+opts.actions.onPermissionGranted = () => {};
+opts.actions.onPermissionDenied = () => {};
+opts.actions.onAlreadySubscribed = () => {};
+opts.actions.onError = () => {};
+};
+document.head.appendChild(s);
+})();
+
+var touchDevice =
+navigator.maxTouchPoints || "ontouchstart" in document.documentElement;
+
+var download_is_processing = false;
+
+// If download_is_processing is true, then if user wants to close the tab, we should ask them if they want to close the tab
+
+//Are you sure u want to leave?
+window.onload = function () {
+window.addEventListener("beforeunload", function (e) {
+if (download_is_processing) {
+    var confirmationMessage =
+        "Are you sure you want to close this page, downloads are still processing";
+
+    (e || window.event).returnValue = confirmationMessage; //Gecko + IE
+    return confirmationMessage; //Gecko + Webkit, Safari, Chrome etc.
+}
+});
+};
+
+function quicklink() {
+var link_now = new URL(window.location.href);
+var r = link_now.searchParams.get("r");
+var f = link_now.searchParams.get("f");
+
+var mapping = {
+ddownr: {
+    1: "mp3",
+    3: "m4a",
+    4: "m4a",
+    5: "720",
+    6: "1080",
+    7: "1080",
+    8: "8k",
+    9: "360",
+    10: "480",
+    11: "4k",
+},
+coconvert: {
+    1: "mp3",
+    2: "m4a",
+    3: "webm",
+    4: "360",
+    5: "480",
+    6: "720",
+    7: "1080",
+    8: "1080",
+    9: "4k",
+    10: "8k",
+    11: "aac",
+    12: "flac",
+    13: "opus",
+    14: "ogg",
+    15: "wav",
+},
+loader: {
+    1: "mp3",
+    2: "m4a",
+    3: "webm",
+    4: "360",
+    5: "480",
+    6: "720",
+    7: "1080",
+    8: "1080",
+    9: "4k",
+    10: "8k",
+    11: "aac",
+    12: "flac",
+    13: "opus",
+    14: "ogg",
+    15: "wav",
+},
+};
+
+if (r != null) {
+document.getElementById("link").value = decodeURIComponent(
+    link_now.searchParams.get("link")
+);
+
+if (mapping[r] && mapping[r][f]) {
+    f = mapping[r][f];
+}
+document.getElementById("format").value = f;
+
+d();
+}
+}
+
+var copyrighted = [];
+var downloaded_formats = [];
+
+const checkCopyright = (url, i, format) => {
+fetch(
+"https://loader.to/ajax/copyright.php?url=" +
+    encodeURIComponent(url) +
+    "&format=" +
+    format +
+    "&randy=" +
+    i,
+{
+    cache: "no-store",
+}
+)
+.then((response) => response.json())
+.then((data) => {
+    if (data.copyright == 1) {
+        console.log("COPYRIGHTED");
+        copyrighted.push(i);
+
+        // Add the format to downloaded_formats array
+        let obj = {
+            id: i,
+            format: format,
+        };
+
+        downloaded_formats.push(obj);
+        console.log(downloaded_formats);
+    }
+})
+.catch((error) => console.error(error));
+};
+
+const fetchProgress = (i, downloadCount) => {
+download_is_processing = true;
+const downloadBox = document.getElementById(
+"download-item" + downloadCount
+);
+let btnDownload = downloadBox.querySelector(
+".section-result .btn-download"
+);
+let btnDownloadText = btnDownload.querySelector("span");
+let progressBar = btnDownload.querySelector(".progress");
+fetch("https://p.oceansaver.in/ajax/progress.php?id=" + i, {
+cache: "no-store",
+})
+.then((response) => response.json())
+.then((data) => {
+    // Check if i is in copyrighted array
+    // if (copyrighted.includes(i)) {
+    //     progressBar.style.width = "100%";
+    //     btnDownloadText.innerHTML = "Redirect";
+    //     btnDownload.href = "https://loader.fo/?source=loader2";
+    //     return;
+    // }
+
+    const responseText = data?.text || "";
+    if (
+        responseText.toLowerCase() === "finished" ||
+        responseText.toLowerCase() === "error" ||
+        data.status === 1
+    ) {
+        // clearInterval(inprogressTimer || 0);
+        progressBar.style.width = "100%";
+    }
+
+    if (responseText.toLowerCase() === "downloading") {
+        download_is_processing = true;
+        let downP = data.progress / 10;
+        let prevDownP = progressBar.dataset.downp || 0;
+        let currentDownP = parseFloat(
+            (downP > prevDownP ? downP : prevDownP) + ""
+        ).toFixed(2);
+
+        progressBar.style.width = currentDownP + "%";
+        progressBar.dataset.downp = currentDownP;
+        btnDownloadText.innerText = `Download in Progress ... ${currentDownP}%`;
+    } else if (responseText.toLowerCase() === "converting") {
+        download_is_processing = true;
+        let convP = data.progress / 10;
+        let prevConvP = progressBar.dataset.convp || 0;
+        let currentConvP = parseFloat(
+            (convP > prevConvP ? convP : prevConvP) + ""
+        ).toFixed(2);
+
+        progressBar.style.width = currentConvP + "%";
+        progressBar.dataset.downp = currentConvP;
+        btnDownloadText.innerText = `Converting ...`;
+    } else if (responseText.toLowerCase() === "error") {
+        download_is_processing = false;
+        progressBar.style.width = "100%";
+        btnDownload.classList.add("failed");
+        btnDownloadText.innerHTML = errorText;
+        btnDownload.classList.remove("animate-pulse");
+    }
+
+    if (responseText.toLowerCase() === "finished") {
+        download_is_processing = false;
+        const hasDownloadUrl = data.download_url != null;
+        btnDownload.href = hasDownloadUrl
+            ? data.download_url
+            : "https://www.byclickdownloader.com/?source=loader2&innerpage=error";
+
+        btnDownloadText.innerHTML =
+            hasDownloadUrl && data.download_url.includes("loader.to")
+                ? "Redirection"
+                : downloadText;
+
+        if (hasDownloadUrl) {
+            btnDownload.classList.remove("disabled");
+            btnDownload.classList.remove("cursor-not-allowed");
+            btnDownload.classList.remove("animate-pulse");
+        } else {
+            btnDownload.classList.add("disabled");
+            btnDownload.classList.add("cursor-not-allowed");
+            btnDownload.classList.remove("animate-pulse");
+        }
+        return;
+    }
+
+    let originTital = document.title.replace(/\(\d+\)/, "");
+    document.title = originTital + "(" + download_count + ")";
+    download_is_processing = true;
+    setTimeout(fetchProgress.bind(null, i, downloadCount), 750);
+})
+.catch((error) => {
+    // clearInterval(inprogressTimer);
+    console.log(error);
+    // btnDownload.classList.add("failed");
+    // btnDownloadText.innerHTML = errorText;
+    download_is_processing = true;
+    setTimeout(fetchProgress.bind(null, i, downloadCount), 750);
+});
+};
+
+const loadNext = (limit, id, url) => {
+var old_limit = parseInt(limit) - 25;
+
+fetch(
+"https://loader.to/api/ajax/playlistJSON?limit=" +
+    old_limit +
+    "&api=dfcb6d76f2f6a9894gjkege8a4ab232222" +
+    "&url=" +
+    encodeURIComponent(link),
+{
+    cache: "no-store",
+}
+)
+.then((response) => response.json())
+.then((data) => {
+    var prev_data = data;
+
+    fetch(
+        "https://loader.to/api/ajax/playlistJSON?limit=" +
+            limit +
+            "&api=dfcb6d76f2f6a9894gjkege8a4ab232222" +
+            "&url=" +
+            encodeURIComponent(link),
+        {
+            cache: "no-store",
+        }
+    )
+        .then((response) => response.json())
+        .then((data) => {
+            //if response data is equal to previous data we make "load more" button disabled so this is the end of playlist
+            if (
+                Object.keys(data).length !=
+                Object.keys(prev_data).length
+            ) {
+                //filtering out new data from response
+                const serialized_Items_Prev = prev_data.map((i) =>
+                    JSON.stringify(i)
+                );
+                const NewItems = data.filter(
+                    (i) =>
+                        !serialized_Items_Prev.includes(
+                            JSON.stringify(i)
+                        )
+                );
+
+                //rendering cards with filtered out data
+                for (let i = 0; i < NewItems.length; i++) {
+                    let videoData = NewItems[i];
+                    render_popup_card(
+                        link,
+                        videoData.url,
+                        videoData.info["thumbnail_url"],
+                        videoData.info["title"]
+                    );
+                }
+                let new_limit = parseInt(limit) + 25;
+                document
+                    .getElementById("loadmore_" + url)
+                    .setAttribute(
+                        "onclick",
+                        "loadNext('" +
+                            new_limit +
+                            "', 'popup_cards_" +
+                            url +
+                            "','" +
+                            url +
+                            "')"
+                    );
+            } else {
+                document
+                    .getElementById("loadmore_" + url)
+                    .setAttribute("disabled", "true");
+                document
+                    .getElementById("loadmore_" + url)
+                    .classList.add("pointer-events-none");
+                document
+                    .getElementById("loadmore_" + url)
+                    .classList.add("opacity-50");
+            }
+        })
+        .catch((error) => console.error(error));
+})
+.catch((error) => console.error(error));
+
+// fetch("https://loader.to/ajax/playlist.php?limit=" + limit + "&url=" + encodeURIComponent(url) + "&api=dfcb6d76f2f6a9894gjkege8a4ab232222", {
+};
+
+const parseYtId = (s) => {
+let e;
+if (s.indexOf("youtube.com/shorts/") > -1) {
+e = /\/shorts\/([a-zA-Z0-9\-_]{11})/.exec(s);
+} else if (s.indexOf("youtube.com/") > -1) {
+e = /v=([a-zA-Z0-9\-_]{11})/.exec(s);
+} else if (s.indexOf("youtu.be/") > -1) {
+e = /\/([a-zA-Z0-9\-_]{11})/.exec(s);
+}
+if (e) {
+return e[1];
+}
+return null;
+};
+
+const isYouTube = (url) => {
+let regex =
+/^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/;
+return regex.test(url);
+};
+
+const downloadPlaceHolder = document.querySelector(
+".section-single-result--placeholder"
+);
+const downloadResultList = document.querySelector(".section-result-list");
+
+const downloadFromParseYoutubeId = (link, data, format = null) => {
+// checkCopyright(link, data.id, format);
+download_count++;
+
+let result = document.createElement("div");
+result.classList.add("section-result");
+result.classList.add("section-single-result");
+result.id = "download-item" + download_count;
+result.innerHTML = singleResultTemplate;
+
+// If your script is external, set the src attribute
+
+// let script = document.createElement("script");
+// script.type = "text/javascript";
+// script.async = true;
+// script.src = "//egalitysarking.com/tC8ko5GSNF955/80662"; // Example script URL
+
+// If the script is inline, you can set its content directly
+// script.textContent = 'console.log("Script runs here!");'; // Example inline script
+// if (!touchDevice) {
+//     result.appendChild(script); // Append the script to the result div
+// }
+
+let videoThumb = result.querySelector(".video-thumb img");
+videoThumb.src = data.info.image;
+
+let videoTitle = result.querySelector(".video-title");
+videoTitle.innerHTML = data.info.title;
+
+let videoUrl = result.querySelector(".video-url");
+let inputLink = document.querySelector(".input-url").value;
+videoUrl.innerHTML = `<span>URL:</span> ${inputLink}`;
+
+let tagList = result.querySelector(".tag-list");
+tagList.innerHTML = renderTagList(format);
+
+// create result
+downloadResultList.prepend(result);
+
+let btnDownloadConverted = result.querySelector(
+".section-result .btn-download"
+);
+btnDownloadConverted.className = "btn-download";
+
+download_is_processing = true;
+
+// clearInterval(inprogressTimer);
+// inprogressTimer = setInterval(() => fetchProgress(data.id), 750);
+fetchProgress(data.id, download_count);
+return;
+};
+
+const downloadFromYoutubeId = (data, link, format) => {
+dataSize = Object.keys(data).length;
+download_count++;
+
+// checkCopyright(link, data.id, format);
+
+//it was needed to write this hack to detect if is it playlist in response or just single video. Original api point gives "is_playlist" flag in response data. But in given /api/ajax/playlistJSON point gives no data about is it playlist or not in response.
+if (dataSize > 1) {
+// render card playlist
+let playlistResult = document.createElement("div");
+playlistResult.innerHTML = playlistResultTemplate;
+playlistResult.id = "playlist-" + download_count;
+playlistResult.className =
+    "section section-result section-playlist-result active";
+let _title = playlistResult.querySelector(".playlist-title");
+_title.innerHTML = `Playlist title (${dataSize} videos)`;
+let _tagList = playlistResult.querySelector(".tag-list");
+let tag = document.createElement("a");
+tag.innerHTML = videoQualities[format];
+_tagList.append(tag);
+let _resultList = document.querySelector(".section-result-list");
+_resultList.prepend(playlistResult);
+
+// generate items;
+let videoList = playlistResult.querySelector(".list-video");
+data.forEach((video, key) => {
+    let item = document.createElement("div");
+    item.innerHTML = playlistItemTemplate;
+    item.className = "video-item";
+    item.dataset.url = video?.url;
+
+    let _img = item.querySelector("img");
+    let _videoUrl = item.querySelector(".item-url");
+    let _videoTitle = item.querySelector(".video-title");
+    let _btnQuality = item.querySelector(".btn-child-quality");
+    let _counter = item.querySelector(".counter");
+
+    _img.src = video?.info?.thumbnail_url || "";
+    _videoUrl.innerText = video?.url || "";
+    _videoTitle.innerHTML = video?.info?.title || "";
+    _btnQuality.dataset.quality = format;
+    _btnQuality.querySelector(
+        "span"
+    ).innerText = `${videoQualities[format]}`;
+    _counter.innerText = key + 1;
+
+    videoList.append(item);
+});
+} else {
+fetch(
+    "https://ab.cococococ.com/ajax/download.php?copyright=0&format=" +
+        format +
+        "&url=" +
+        encodeURIComponent(link) +
+        "&api=dfcb6d76f2f6a9894gjkege8a4ab232222",
+    {
+        cache: "no-store",
+    }
+)
+    .then((response) => response.json())
+    .then((data) => {
+        let content = atob(data.content);
+
+        const placeholder = document.createElement("div");
+        placeholder.innerHTML = content;
+
+        downloadFromParseYoutubeId(link, data, format);
+    })
+    .catch((error) => console.error(error));
+}
+};
+
+const downloadWithoutDetectId = (data) => {
+download_count++;
+
+document.getElementById("placeholder").innerHTML = atob(data.content);
+document.getElementById("placeholder").removeAttribute("id");
+document.getElementById("load").removeAttribute("disabled");
+p(data.id);
+
+// document.getElementById("card-" + data.id).scrollIntoView({
+//     behavior: 'smooth',
+//     block: 'center',
+//     inline: 'center'
+// });
+
+//parsing old card html from response data
+let cardHtml = document.createElement("html");
+cardHtml.innerHTML = atob(data.content);
+
+//rendering new card dummy
+let card_id = data.id;
+render_card(card_id, data.repeat_download);
+
+let oldCardTitleLinks = cardHtml.getElementsByTagName("small")[0];
+document.getElementById("card-title-links_" + card_id).innerHTML =
+oldCardTitleLinks.innerHTML;
+
+document.getElementById("card-title-text_" + card_id).innerHTML =
+data.info["title"];
+
+//inserting new pic
+document.getElementById("card-image_" + card_id).src = data.info["image"];
+
+//reset new card download button
+let newDownloadButton = document.getElementById(
+"card-downloadButton_" + card_id
+);
+newDownloadButton.className = "";
+newDownloadButton.className =
+"text-white w-full cursor-pointer bg-yblue hover:bg-blue-800  focus:outline-none font-semibold rounded-[10px] text-lg px-5 py-4 text-center mr-2 flex items-center justify-center uppercase opacity-50 transition-all pointer-events-none mt-8";
+newDownloadButton.href = "#";
+newDownloadButton.disabled = true;
+document
+.getElementById("download-spinner_" + card_id)
+.classList.remove("hidden");
+document.getElementById("progressbar_" + card_id).classList.add("bg-yblue");
+document
+.getElementById("progressbar_" + card_id)
+.classList.remove("bg-yorange");
+document.getElementById("progress-text_" + card_id).innerHTML = "Download";
+
+document.getElementById("newcard-" + card_id).classList.remove("hidden");
+};
+
+const renderTagList = (format = null) => {
+let quality = format || getQuality();
+let tags = [];
+if (Object.keys(videoQualities).includes(quality)) {
+tags.push("Video");
+tags.push(videoQualities[quality]);
+}
+
+if (audioQualities.includes(quality)) {
+tags.push("Audio");
+tags.push(quality.toUpperCase());
+}
+return tags
+.map((tag) => `<a href="javascript:void(0);">${tag}</a>`)
+.join("");
+};
+
+const getQuality = () => {
+let btnQuality = document.querySelector(".btn-quality");
+return btnQuality.dataset.quality || "1080";
+};
+
+const removeAlert = () => {
+const alertEl = document.querySelector(".alert");
+if (!alertEl) {
+return;
+}
+alertEl.remove();
+};
+
+const removePlaceHolder = () => {
+const placeholder = document.querySelector(
+".section-single-result--placeholder"
+);
+placeholder && placeholder.remove();
+};
+
+const insertPlaceHolder = () => {
+const plh = document.createElement("div");
+plh.className = "section-result section-single-result--placeholder";
+plh.innerHTML = placeholderTemplate;
+downloadResultList.prepend(plh);
+};
+
+document
+.getElementById("load")
+.setAttribute(
+"onclick",
+"window.open('https://ab.cococococ.com/ajax/ad/l.php', '_blank');"
+);
+
+const handlePlaylistQualityClick = (e) => {
+const group = e.target.closest(".button-playlist-group");
+const plTarget = group.querySelector(".btn-child-quality");
+const plPopover = document.querySelector(".popover-quality");
+const plBtnDownload = group.querySelector(".btn-child-download");
+const plBtnQuality = group.querySelector(".btn-child-quality");
+
+e.preventDefault();
+plPopover.classList.add("hidden");
+hideAllQualityPopover(plBtnQuality);
+
+createPopover(plTarget, plPopover);
+if (plBtnQuality.classList.contains("open-quality")) {
+plTarget.classList.remove("open-quality");
+plPopover.classList.add("hidden");
+} else {
+plTarget.classList.add("open-quality");
+plPopover.classList.remove("hidden");
+}
+};
+
+const hideAllQualityPopover = (exclude) => {
+let _qualityList = document.querySelectorAll(".open-quality");
+_qualityList &&
+_qualityList?.length &&
+_qualityList.forEach((_btnQuality) => {
+    if (exclude && _btnQuality.isEqualNode(exclude)) {
+        return;
+    }
+    _btnQuality.classList.remove("open-quality");
+});
+};
+
+const collapsePlaylist = (evt) => {
+evt.preventDefault();
+let _playlist = evt.target.closest(".section-playlist-result");
+if (_playlist.classList.contains("active")) {
+_playlist.classList.remove("active");
+} else {
+_playlist.classList.add("active");
+}
+};
+
+const downloadItemInPlaylist = (evt) => {
+evt.preventDefault();
+let _item = evt.target.closest(".video-item");
+if (!_item) {
+return;
+}
+let _btnQuality = _item.querySelector(".btn-child-quality");
+hideAllQualityPopover(_btnQuality);
+_startDownloadYoutubeLink(
+_item.dataset.url,
+_btnQuality?.dataset?.quality || "720"
+);
+};
+
+const _startDownloadYoutubeLink = (link, format) => {
+if (is_youtube_allowed == false) {
+alert("Youtube downloading is not allowed");
+return;
+}
+
+let encodeYoutubeUrl = encodeURIComponent(
+"https://www.youtube.com/watch?v=" + parseYtId(link)
+);
+fetch(
+`https://ab.cococococ.com/ajax/download.php?copyright=0&format=${format}&url=${encodeYoutubeUrl}&api=dfcb6d76f2f6a9894gjkege8a4ab232222`,
+{
+    cache: "no-store",
+}
+)
+.then((response) => response.json())
+.then((data) => downloadFromParseYoutubeId(link, data, format))
+.catch((error) => console.error(error))
+.finally(() => {
+    removePlaceHolder();
+    btnDownload.removeAttribute("disabled");
+    scrollToElement(".section-download");
+});
+};
+
+const scrollToElement = (selector) => {
+let _el = document.querySelector(selector);
+_el &&
+_el.scrollIntoView({
+    block: "center",
+    behavior: "smooth",
+    inline: "center",
+});
+};
+
+window.addEventListener("DOMContentLoaded", function () {
+if (btnDownload) {
+btnDownload.addEventListener("click", function (evt) {
+    evt.preventDefault();
+
+    // a(
+    //     "//absorbedscholarsvolatile.com/a7/08/af/a708afa9c8e3d675b985ad4fc6d5fd70.js"
+    // );
+    document
+        .getElementById("load")
+        .setAttribute(
+            "onclick",
+            "window.open('https://ab.cococococ.com/ajax/ad/l.php', '_blank');"
+        );
+
+    btnDownload.disabled = true;
+    insertPlaceHolder();
+
+    const link = inputLink.value;
+    const format = mainBtnQuality.dataset.quality || "720";
+
+    if (!isValidURL(link)) {
+        btnDownload.removeAttribute("disabled");
+    }
+
+    if (link.length == 0) {
+        alert("Please Insert a Download URL");
+        btnDownload.removeAttribute("disabled");
+        return;
+    }
+
+    if (parseYtId(link) != null) {
+        _startDownloadYoutubeLink(link, format);
+    } else if (isYouTube(link)) {
+        if (is_youtube_allowed == false) {
+            alert("Youtube downloading is not allowed");
+            return;
+        }
+
+        fetch(
+            "https://loader.to/api/ajax/playlistJSON?format=" +
+                format +
+                "&api=dfcb6d76f2f6a9894gjkege8a4ab232222&limit=25" +
+                "&url=" +
+                encodeURIComponent(link),
+            {
+                cache: "no-store",
+            }
+        )
+            .then((response) => response.json())
+            .then((data) => downloadFromYoutubeId(data, link, format))
+            .catch((error) => console.error(error))
+            .finally(() => {
+                removePlaceHolder();
+                btnDownload.removeAttribute("disabled");
+            });
+    } else {
+        fetch(
+            "https://ab.cococococ.com/ajax/download.php?format=" +
+                format +
+                "&url=" +
+                encodeURIComponent(link) +
+                "&api=dfcb6d76f2f6a9894gjkege8a4ab232222",
+            {
+                cache: "no-store",
+            }
+        )
+            .then((response) => response.json())
+            .then((data) =>
+                downloadFromParseYoutubeId(link, data, format)
+            )
+            .catch((error) => console.error(error))
+            .finally(() => {
+                removePlaceHolder();
+                btnDownload.removeAttribute("disabled");
+            });
+    }
+});
+}
+
+if (contactForm) {
+const formContact = document.querySelector(".contact-form");
+formContact.addEventListener("submit", (evt) => {
+    evt.preventDefault();
+    var formdata = new FormData();
+    let domain = window.location.hostname;
+    formdata.append("website", domain);
+    formdata.append(
+        "subject",
+        document.querySelector(".input-subject").value
+    );
+    formdata.append(
+        "email",
+        document.querySelector(".input-email").value
+    );
+    formdata.append(
+        "message",
+        document.querySelector(".input-message").value
+    );
+
+    var requestOptions = {
+        method: "POST",
+        body: formdata,
+        redirect: "follow",
+    };
+
+    let alert = document.querySelector(".alert");
+    if (alert) {
+        alert.remove();
+    }
+    fetch("https://loader.fo/api/contact", requestOptions)
+        .then((response) => response.json())
+        .then((response) => {
+            let alertEl = document.createElement("div");
+            alertEl.innerHTML = alertSuccess;
+            alertEl.classList.add("alert");
+            alertEl.querySelector(".alert-msg").innerHTML =
+                response?.result?.message ||
+                response?.message ||
+                "We will contact you soon!";
+            contactForm.prepend(alertEl);
+        })
+        .catch((error) => {
+            let alertEl = document.createElement("div");
+            alertEl.innerHTML = alertError;
+            alertEl.classList.add("alert");
+            alertEl.querySelector(".alert-msg").innerHTML =
+                error?.result?.message || "Something went wrong!";
+            contactForm.prepend(alertEl);
+        })
+        .finally(() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+});
+}
+});
+
+</script>
+</body>
+</html>
